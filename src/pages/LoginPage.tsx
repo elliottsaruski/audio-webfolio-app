@@ -5,6 +5,9 @@ import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { supabase } from "../lib/supabaseClient";
 import { useAuth } from "../context/AuthProvider";
 
+import login from "../styles/pages/LoginPage.module.css";
+// import styles from "../styles/components/sharedComponents.module.css";
+
 function LoginPage() {
   const { user, loading } = useAuth();
   const navigate = useNavigate();
@@ -19,8 +22,14 @@ function LoginPage() {
   // Show loading state while auth is initializing
   if (loading) {
     return (
-      <div className="login-loading">
-        <div className="spinner">Loading...</div>
+      <div
+      // className={styles.loading}
+      >
+        <div
+        // className={styles.spinner}
+        >
+          Loading...
+        </div>
       </div>
     );
   }
@@ -31,7 +40,7 @@ function LoginPage() {
   }
 
   return (
-    <div className="login-container">
+    <div className={login.supabase_auth_ui_ui}>
       <Auth
         supabaseClient={supabase}
         appearance={{ theme: ThemeSupa }}

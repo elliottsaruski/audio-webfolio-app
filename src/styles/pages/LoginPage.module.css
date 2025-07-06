@@ -2,7 +2,7 @@
    SUPABASE AUTH UI CUSTOMIZATION
    ========================================== */
 
-.supabase-auth-ui_ui {
+.supabase_auth_ui_ui {
   background: var(--bg-primary) !important;
 }
 
