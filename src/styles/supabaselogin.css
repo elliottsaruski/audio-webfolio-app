@@ -1,0 +1,27 @@
+/* ==========================================
+   SUPABASE AUTH UI CUSTOMIZATION
+   ========================================== */
+
+.supabase-auth-ui_ui {
+  background: var(--bg-primary) !important;
+}
+
+.supabase-auth-ui_ui input {
+  background: var(--bg-input) !important;
+  border: 1px solid var(--border-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+.supabase-auth-ui_ui button {
+  background: var(--color-primary) !important;
+  color: var(--bg-primary) !important;
+  border: none !important;
+}
+
+.supabase-auth-ui_ui button:hover {
+  background: var(--color-primary-muted) !important;
+}
+
+.supabase-auth-ui_ui .supabase-auth-ui_ui-label {
+  color: var(--text-secondary) !important;
+}
